@@ -4,7 +4,7 @@ Browse item IDs and copy `AddItem` console commands for Incursion Red River.
 
 ## Use the terminal
 
-Open the repository's GitHub Pages website, or download **Incursion_Terminal.html** and open it in a browser. The terminal is a self-contained HTML file: it needs no installation, server, build step or external dependencies.
+Open the repository's GitHub Pages website, or download the repository and open **Incursion_Terminal.html** in your browser. Keep the `site/` folder beside it for the styles, search, copy buttons, and favicon. No installation or build step is needed.
 
 - Sections start collapsed. Select a heading to expand or collapse it.
 - **Weapons and Attachments** contains separate, collapsible weapon-family groups, following the original list's grouping. These are browsing groups, not guarantees that every listed part fits every weapon in that family.
@@ -75,7 +75,7 @@ A repository owner or maintainer needs to enable hosting once:
 
 For a repository named `Incursion-Red-River-Item-List`, the default address is `https://<owner>.github.io/Incursion-Red-River-Item-List/`.
 
-`index.html` forwards the root address to `Incursion_Terminal.html`, preserving existing links and the standalone download. All links are relative so forks and project subpaths work. `.nojekyll` keeps this a plain static site. No Actions deployment workflow is needed.
+`index.html` forwards the root address to `Incursion_Terminal.html`, preserving existing links. All links are relative so forks and project subpaths work. `.nojekyll` keeps this a plain static site. No Actions deployment workflow is needed.
 
 ## Maintain and verify
 
