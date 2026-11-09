@@ -88,7 +88,8 @@ h1 {
 
 textarea,
 input[type="text"],
-.search input {
+.search input,
+.search-row input {
   width: 100%;
   padding: 11px 12px;
   border-radius: 10px;
@@ -369,14 +370,29 @@ hr {
 
 .search-row {
   display: flex;
-  gap: 8px;
-  align-items: center
+  gap: 8px
 }
 
 .search-row input {
+  appearance: none;
   min-width: 0;
   flex: 1;
-  font: 14px var(--mono)
+  padding: 9px 12px;
+  background: #0b1510;
+  color-scheme: dark;
+  caret-color: var(--accent);
+  font-size: 14px
+}
+
+.search-row input::placeholder {
+  color: var(--muted);
+  opacity: .75
+}
+
+.search-row input:focus {
+  border-color: var(--accent);
+  outline: 1px solid var(--accent);
+  outline-offset: 1px
 }
 
 .search-row .btn {
@@ -487,6 +503,10 @@ details[open]>summary::before {
 }
 
 @media(max-width:540px) {
+  .search-row input {
+    font-size: 16px
+  }
+
   .row {
     flex-wrap: wrap
   }
