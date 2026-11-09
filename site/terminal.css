@@ -41,6 +41,8 @@ summary{display:flex;gap:12px;align-items:center;cursor:pointer;padding:14px 12p
 summary::-webkit-details-marker{display:none}
 summary::before{content:"▸";flex-shrink:0;color:var(--accent)}
 details[open]>summary::before{content:"▾"}
+.category>summary{padding-block:10px}
+.category-icon{flex:none}
 .group-title{flex:1;min-width:0;font-size:13px;font-weight:700}
 .secCount{white-space:nowrap}
 .category+.category{border-top:1px solid var(--line)}
